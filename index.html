@@ -1,99 +1,131 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
-    <title>donchokella's Webpage</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--edit-->
+    <meta name="description" content="Ali Alparslan's Webpage">
+    <meta name="keywords" content="Ali Alparslan, Ukulele, GameDev, Web Design">
+    <meta name="author" content="Ali Alparslan">
 
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap" rel="stylesheet">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <title>Ali's Page | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div id="social">
-
-        <font>ali alparslan | <span>game developer</span></font>
-
-        <i class="fas fa-home"></i>
-        <i class="fas fa-search"></i>
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-instagram"></i>
-        <i class="fas fa-chess-pawn"></i>
-        <i class="fas fa-address-book"></i>
-        <i class="fas fa-map-marker-alt"></i>
-
-    </div>
-
-    <div id="container">
-
-        <header>
-
-            <img id="headerPic" src="img/1.jpg" alt="">
-            <div id="centered">donchokella</div>
-
-        </header>
-
-        <section>
-
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">ali</span> alparslan | <span1>game developer</span1>
+                </h1>
+            </div>
             <nav>
                 <ul>
-                    <li><a href="index.html"><i class="fas fa-home"></i>Main Page</a></li>
-                    <li><a href="about_me.html"><i class="fas fa-address-card"></i>About Me</a></li>
-                    <li><a href="projects.html"><i class="fas fa-microchip"></i>Projects</a></li>
-                    <li><a href="gallery.html"><i class="fas fa-images"></i>Gallery</a></li>
-                    <li><a href="contact_info.html"><i class="fas fa-address-book"></i>Contact Info</a></li>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="CV.html">Curriculum Vitae</a></li>
+
                 </ul>
             </nav>
+        </div>
+    </header>
+    <section id="showcase">
 
-            <main>
-                <div class="content">
-                    <img src="img/2.jpeg" alt="" class="pic">
-                    <h5>Başlık</h5>
-                    <p class="contentHeader">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-                    </p>
-                    <a href="#" class="btnDvm">Devamını Oku...</a>
-                </div>
+        <div class="container">
 
-                <div class="content">
-                    <img src="img/3.jpeg" alt="" class="pic">
-                    <h5>Başlık</h5>
-                    <p class="contentHeader">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
-                    <a href="#" class="btnDvm">Devamını Oku...</a>
-                </div>
+            <div id="quote-container">
+                <p id="quote-text"><span class="quote">Loading...</span></p>
+            </div>
 
-                <div class="content">
-                    <img src="img/4.jpeg" alt="" class="pic">
-                    <h5>Başlık</h5>
-                    <p class="contentHeader">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                    <a href="#" class="btnDvm">Devamını Oku...</a>
-                </div>
+            <script>
+                var quotes = [
+                    "''A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.'' - Antoine de Saint-Exupéry",
 
-            </main>
+                    "''Your most unhappy customers are your greatest source of learning.'' - Bill Gates",
 
-        </section>
+                    "'Every game is an opportunity to measure yourself against your own potential.'' - Bud Wilkinson",
 
-        <footer>Tüm hakları saklıdır &copy | 2023</footer>
-    </div>
+                    "''Games are a trigger for adult play. Play is the act of taking a set of rules seriously. And what you're doing when you're playing a game is embodying the rules.'' - Eric Zimmerman",
+
+                    "''Games enable people to come together, compete, and have fun.'' - Gabe Newell",
+                    "'What we try to do is create a situation where we come in and we’re going to be as efficient as we possibly can, because, just by the nature of the development process, you have so many things that can be large holes in your plans.'' - Gabe Newell",
+
+                    "''The game development process is like a journey filled with learning and constant improvement.'' - Hideo Kojima",
+                    "''I think game development is a war.'' - Hideo Kojima",
+
+                    "''Designing a game is like writing a novel: difficult and time-consuming, but incredibly rewarding.'' - Jane McGonigal",
+
+                    "''Games offer an experience of emotional connection and learning. This enhances players' commitment to games.'' - Jenova Chen",
+
+                    "''Games provide a platform to encourage the imagination and creativity of players.'' - John Carmack",
+
+                    "'In our games, you’re a director. You’re making a movie. And you’re the star.'' - Peter Molyneux",
+
+                    "''The best games are on the edge of their seat. It’s like riding a roller coaster. It’s the game that has you at the edge of your seat, because you’re excited about what’s going to happen next.'' - Shigeru Miyamoto",
+
+                    "''Game development is the art of offering choices to players, allowing them the freedom to explore the game world.'' - Sid Meier",
+                    "''A game is never complete; only abandoned.'' - Sid Meier",
+
+                    "''Games are the convergence of technology and art, allowing us to create unique and compelling experiences.'' - Tim Schafer",
+
+                    "''The game development is a chance to connect and interact with people through computers.'' - Will Wright",
+                ];
+
+                document.addEventListener("DOMContentLoaded", function () {
+                    showRandomQuote();
+                });
+
+                function showRandomQuote() {
+                    var randomIndex = Math.floor(Math.random() * quotes.length);
+                    var quoteText = quotes[randomIndex];
+
+                    document.getElementById("quote-text").innerText = quoteText;
+                }
+            </script>
+
+        </div>
+    </section>
+    <section id="newsletter">
+        <div class="container">
+
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container">
+            <div class="box">
+                <a href="https://www.youtube.com/@donchokella8984"><img src="./img/logo_1.png"></a>
+                <h3>Ukulele</h3>
+                <p>Hello! You can click to go to my YouTube channel where I play ukulele. I share my songs and covers of
+                    other songs that I love very much here.</p>
+            </div>
+            <div class="box">
+                <a href="https://donchokella.itch.io/"><img src="./img/logo_2.png"></a>
+                <h3>Game Development</h3>
+                <p>This is my game development portfolio. Here you can find games I have developed.
+                    If you are interested, you can check out more details.</p>
+            </div>
+            <div class="box">
+                <a href="https://www.instagram.com/alicho.handpoke/"><img src="./img/logo_3.png"></a>
+                <h3>Handpoke Tattoo</h3>
+                <p>Hi! This is my handpoke tattoo portfolio. Here you can see tattoos, get inspired and get in touch.
+                    Come to my Instagram account for more details and to contact me.</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>alicho web design, copyright &copy; 2024</p>
+    </footer>
+
+    <style>
+        #quote-container {
+            max-width: 600px;
+            margin: 100px auto;
+            padding: 20px;
+
+        }
+    </style>
+
 </body>
 
 </html>
