@@ -16,10 +16,33 @@
 
 <body>
     <header>
+        <style>
+            h1 {
+                display: flex;
+                align-items: center;
+            }
+
+            h1 img {
+                margin-right: 10px;
+                /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
+            }
+
+            .highlight {
+                margin-right: 10px;
+                /* "ali" ile "alparslan" arasında boşluk bırakmak için isteğe bağlı */
+            }
+
+            h1 span:last-child {
+                font-size: 14px;
+                margin-top: 14px;
+                margin-left: 5px;
+                /* game developer yazısının boyutunu isteğinize göre ayarlayabilirsiniz */
+            }
+        </style>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">ali</span> alparslan | <span1>game developer</span1>
-                </h1>
+                <h1><img src="./icons/joystick-icon.png" alt="Map" style="width: 50px;  margin-right: 10px;"><span
+                        class="highlight">ali</span> alparslan | <span>game developer</span></h1>
             </div>
             <nav>
                 <ul>
@@ -93,6 +116,7 @@
     </section>
     <section id="boxes">
         <div class="container">
+
             <div class="box">
                 <a href="https://www.youtube.com/@donchokella8984"><img src="./img/logo_1.png"></a>
                 <h3>Ukulele</h3>

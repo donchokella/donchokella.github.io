@@ -2,7 +2,7 @@ body {
     font: 15px/ Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: #fddfd8;
 }
 
 /* Global*/
@@ -12,13 +12,18 @@ body {
     overflow: hidden;
 }
 
+.container a:hover {
+    color: #4f271c;
+
+}
+
 ul {
     margin: 0;
     padding: 0;
 }
 
 .button_1 {
-    background: #e8491d;
+    background: #4f271c;
     height: 38px;
     border: 0;
     color: #ffffff;
@@ -27,7 +32,7 @@ ul {
 
 .dark {
     padding: 15px;
-    background: #35424a;
+    background: #473f38;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -38,16 +43,16 @@ ul {
 }
 
 .dark a:hover {
-    color: #e8491d;
+    color: #4f271c;
 }
 
 /* Header*/
 header {
-    background: #888;
+    background: #a79482;
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #e8491d 3px solid;
+    border-bottom: #4f271c 3px solid;
 }
 
 header a {
@@ -78,7 +83,7 @@ header nav {
 
 header .highlight,
 header .current a {
-    color: #e8491d;
+    color: #4f271c;
     font-weight: bold;
 }
 
@@ -124,9 +129,9 @@ header a:hover {
 /* Newsletter */
 
 #newsletter {
-    padding: 15px;
+    padding: 0px;
     color: #ffffff;
-    background: #888;
+    background: #a79482;
 }
 
 #newsletter h1 {
@@ -199,7 +204,7 @@ footer {
     padding: 20px;
     margin-top: 20px;
     color: #ffffff;
-    background-color: #e8491d;
+    background-color: #a79482;
     text-align: center;
 }
 
@@ -249,4 +254,51 @@ span1 {
 #quote-text {
     font-size: 24px;
     /* Dilediğiniz font boyutunu burada belirleyebilirsiniz */
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    50% {
+        transform: rotate(-5deg);
+    }
+
+    75% {
+        transform: rotate(5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#branding:hover img {
+    animation: rotate 0.5s ease-in-out infinite;
+}
+
+/* İlgili bölümün büyüyüp küçülen animasyonunu sağlamak için bir animasyon ekleyin */
+#boxes .box {
+    transition: transform 0.3s ease-in-out;
+}
+
+#boxes .box:hover {
+    transform: scale(1.1);
+}
+
+#boxes .box img {
+    width: 80px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#boxes .box img:hover {
+    transform: scale(1.1);
+    /* İstediğiniz büyüklük oranını kullanabilirsiniz */
+    animation: rotate 0.5s ease-in-out infinite;
+    /* Animasyonu sınırsız tekrar etmek için */
 }

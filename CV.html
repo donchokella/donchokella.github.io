@@ -16,9 +16,33 @@
 
 <body>
     <header>
+        <style>
+            h1 {
+                display: flex;
+                align-items: center;
+            }
+
+            h1 img {
+                margin-right: 10px;
+                /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
+            }
+
+            .highlight {
+                margin-right: 10px;
+                /* "ali" ile "alparslan" arasında boşluk bırakmak için isteğe bağlı */
+            }
+
+            h1 span:last-child {
+                font-size: 14px;
+                margin-top: 14px;
+                margin-left: 5px;
+                /* game developer yazısının boyutunu isteğinize göre ayarlayabilirsiniz */
+            }
+        </style>
         <div class="container">
             <div id="branding">
-                <h1><span class="highlight">ali</span> alparslan</h1>
+                <h1><img src="./icons/joystick-icon.png" alt="Map" style="width: 50px;  margin-right: 10px;"><span
+                        class="highlight">ali</span> alparslan | <span>game developer</span></h1>
             </div>
             <nav>
                 <ul>
@@ -33,7 +57,12 @@
 
     <section id="newsletter">
         <div class="container">
-            <h1>Curriculum Vitae</h1>
+            <h1>Curriculum Vitae
+                <a href="./CV/Ali_Alparslan_CV.pdf" download>
+                    <img src="./icons/download-icon.png" alt="Download" style="width: 24px; margin-left: 5px;">
+                </a>
+            </h1>
+
 
         </div>
     </section>
@@ -107,32 +136,63 @@
                 <div class="dark">
                     <h3>Hello!</h3>
                     <p>
-                        I am Ali, I graduated from METU Civil Engineering Department in 2021. However, I couldn't find a
-                        job in this field that satisfied me later on. Nevertheless, I found something I love and that
-                        would bring me satisfaction. Since that day, I have been developing myself in game development.
-                        I took various courses and tried to create my own games. You can see some of these games on my
-                        itch.io account. Additionally, if you'd like to download my CV, you can do so from here. If you
-                        wish to get in touch with me, please check the contact section below. Regards..</p>
+                        I am Ali. I graduated from METU Civil Engineering Department in 2021. However, I couldn't find a
+                        job in this field that satisfied me later on. Fortunately, I found something I love and that
+                        brings me satisfaction. Since that day, I have been developing my skills in game development. I
+                        have taken various courses and tried to create my own games. You can explore some of these games
+                        on my account. Moreover, if you'd like to download my CV, you can click the download button next
+                        to Curriculum Vitae. If you wish to get in touch with me, please refer to the contact section
+                        below. Regards...
+                    </p>
+
                 </div>
             </aside>
 
             <aside id="sidebar">
                 <div class="dark">
                     <h3>Contact</h3>
+                    <style>
+                        p {
+                            display: flex;
+                            align-items: center;
+                        }
 
-                    <p><em><a href="ali.alparslan.94@outlook.com">ali.alparslan.94@outlook.com</a></em></p>
-                    <p><em><a href="https://github.com/donchokella?tab=repositories">GitHub</a></em></p>
-                    <p><em><a href="https://www.linkedin.com/in/alialparslan/">LinkedIn</a></em></p>
-                    <p><em><a href="https:donchokella.itch.io">Itch.io</a></em></p>
+                        p img {
+                            margin-right: 10px;
+                            /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
+                        }
+                    </style>
+
+                    <!-- Map -->
+                    <p><img src="./icons/map-icon.png" alt="Map" style="width: 32px;">Ankara, TURKEY</p>
+
+                    <!-- E-posta -->
+                    <p><img src="./icons/email-icon.png" alt="E-posta" style="width: 32px;"> <a
+                            href="mailto:ali.alparslan.94@outlook.com">E-mail</a></p>
+
+                    <!-- GitHub -->
+                    <p><img src="./icons/github-icon.png" alt="GitHub" style="width: 32px;"> <em><a
+                                href="https://github.com/donchokella?tab=repositories">GitHub</a></em></p>
+
+                    <!-- LinkedIn -->
+                    <p><img src="./icons/linkedin-icon.png" alt="LinkedIn" style="width: 32px;"> <em><a
+                                href="https://www.linkedin.com/in/alialparslan/">LinkedIn</a></em></p>
+
+                    <!-- itch.io -->
+                    <p><img src="./icons/itchio-icon.png" alt="itch.io" style="width: 32px;"> <em><a
+                                href="https:donchokella.itch.io">itch.io</a></em></p>
+
+
 
                 </div>
             </aside>
 
         </div>
     </section>
-    <footer>
-        <p>alicho web design, copyright &copy; 2024</p>
-    </footer>
+
 </body>
+<footer>
+    <p>alicho web design, copyright &copy; 2024</p>
+</footer>
 
 </html>
