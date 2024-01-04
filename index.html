@@ -5,151 +5,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--edit-->
     <meta name="description" content="Ali Alparslan's Webpage">
     <meta name="keywords" content="Ali Alparslan, Ukulele, GameDev, Web Design">
     <meta name="author" content="Ali Alparslan">
 
     <title>Ali's Page | Welcome</title>
+
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+
+
+
 </head>
 
 <body>
     <header>
-        <style>
-            h1 {
-                display: flex;
-                align-items: center;
-            }
-
-            h1 img {
-                margin-right: 10px;
-                /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
-            }
-
-            .highlight {
-                margin-right: 10px;
-                /* "ali" ile "alparslan" arasında boşluk bırakmak için isteğe bağlı */
-            }
-
-            h1 span:last-child {
-                font-size: 14px;
-                margin-top: 14px;
-                margin-left: 5px;
-                /* game developer yazısının boyutunu isteğinize göre ayarlayabilirsiniz */
-            }
-        </style>
         <div class="container">
             <div id="branding">
-                <h1><img src="./icons/joystick-icon.png" alt="Map" style="width: 50px;  margin-right: 10px;"><span
-                        class="highlight">ali</span> alparslan | <span>game developer</span></h1>
+                <h1><img src="./icons/joystick-icon.png" alt="Map"><span class="highlight">ali</span> alparslan |
+                    <span>game developer</span>
+                </h1>
             </div>
             <nav>
                 <ul>
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="CV.html">Curriculum Vitae</a></li>
-
                 </ul>
             </nav>
         </div>
     </header>
     <section id="showcase">
-
         <div class="container">
-
             <div id="quote-container">
                 <p id="quote-text"><span class="quote">Loading...</span></p>
             </div>
-
-            <script>
-                var quotes = [
-                    "''A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.'' - Antoine de Saint-Exupéry",
-
-                    "''Your most unhappy customers are your greatest source of learning.'' - Bill Gates",
-
-                    "'Every game is an opportunity to measure yourself against your own potential.'' - Bud Wilkinson",
-
-                    "''Games are a trigger for adult play. Play is the act of taking a set of rules seriously. And what you're doing when you're playing a game is embodying the rules.'' - Eric Zimmerman",
-
-                    "''Games enable people to come together, compete, and have fun.'' - Gabe Newell",
-                    "'What we try to do is create a situation where we come in and we’re going to be as efficient as we possibly can, because, just by the nature of the development process, you have so many things that can be large holes in your plans.'' - Gabe Newell",
-
-                    "''The game development process is like a journey filled with learning and constant improvement.'' - Hideo Kojima",
-                    "''I think game development is a war.'' - Hideo Kojima",
-
-                    "''Designing a game is like writing a novel: difficult and time-consuming, but incredibly rewarding.'' - Jane McGonigal",
-
-                    "''Games offer an experience of emotional connection and learning. This enhances players' commitment to games.'' - Jenova Chen",
-
-                    "''Games provide a platform to encourage the imagination and creativity of players.'' - John Carmack",
-
-                    "'In our games, you’re a director. You’re making a movie. And you’re the star.'' - Peter Molyneux",
-
-                    "''The best games are on the edge of their seat. It’s like riding a roller coaster. It’s the game that has you at the edge of your seat, because you’re excited about what’s going to happen next.'' - Shigeru Miyamoto",
-
-                    "''Game development is the art of offering choices to players, allowing them the freedom to explore the game world.'' - Sid Meier",
-                    "''A game is never complete; only abandoned.'' - Sid Meier",
-
-                    "''Games are the convergence of technology and art, allowing us to create unique and compelling experiences.'' - Tim Schafer",
-
-                    "''The game development is a chance to connect and interact with people through computers.'' - Will Wright",
-                ];
-
-                document.addEventListener("DOMContentLoaded", function () {
-                    showRandomQuote();
-                });
-
-                function showRandomQuote() {
-                    var randomIndex = Math.floor(Math.random() * quotes.length);
-                    var quoteText = quotes[randomIndex];
-
-                    document.getElementById("quote-text").innerText = quoteText;
-                }
-            </script>
-
         </div>
     </section>
     <section id="newsletter">
         <div class="container">
+            <h3></h3>
 
         </div>
     </section>
     <section id="boxes">
         <div class="container">
-
             <div class="box">
-                <a href="https://www.youtube.com/@donchokella8984"><img src="./img/logo_1.png"></a>
+                <a href="https://www.youtube.com/@donchokella8984" target="_blank"><img src="./img/logo_1.png"></a>
                 <h3>Ukulele</h3>
-                <p>Hello! You can click to go to my YouTube channel where I play ukulele. I share my songs and covers of
+                <p>Hello! You can click to go to my <b>YouTube</b> channel where I play ukulele. I share my songs and
+                    covers of
                     other songs that I love very much here.</p>
             </div>
             <div class="box">
-                <a href="https://donchokella.itch.io/"><img src="./img/logo_2.png"></a>
+                <a href="https://donchokella.itch.io/" target="_blank"><img src="./img/logo_2.png"></a>
                 <h3>Game Development</h3>
-                <p>This is my game development portfolio. Here you can find games I have developed.
+                <p>This is my <b>Itch.io</b> page. Here you can find games I have developed.
                     If you are interested, you can check out more details.</p>
             </div>
             <div class="box">
-                <a href="https://www.instagram.com/alicho.handpoke/"><img src="./img/logo_3.png"></a>
+                <a href="https://www.instagram.com/alicho.handpoke/" target="_blank"><img src="./img/logo_3.png"></a>
                 <h3>Handpoke Tattoo</h3>
-                <p>Hi! This is my handpoke tattoo portfolio. Here you can see tattoos, get inspired and get in touch.
-                    Come to my Instagram account for more details and to contact me.</p>
+                <p>Hi! This is my <b>Instagram</b> account. Here you can see the tattoos I have made, get inspired and
+                    get in touch.
+                    For more detailed information and to contact me, come to my Instagram account..</p>
             </div>
         </div>
     </section>
-    <footer>
-        <p>alicho web design, copyright &copy; 2024</p>
-    </footer>
-
-    <style>
-        #quote-container {
-            max-width: 600px;
-            margin: 100px auto;
-            padding: 20px;
-
-        }
-    </style>
-
 </body>
+<footer>
+    <p>alicho web design, copyright &copy; 2024</p>
+</footer>
 
 </html>

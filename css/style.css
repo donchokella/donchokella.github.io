@@ -1,52 +1,13 @@
+/* General Styling */
 body {
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
     font: 15px/ Arial, Helvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #fddfd8;
+    background-color: #f7e4e0;
 }
 
-/* Global*/
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.container a:hover {
-    color: #4f271c;
-
-}
-
-ul {
-    margin: 0;
-    padding: 0;
-}
-
-.button_1 {
-    background: #4f271c;
-    height: 38px;
-    border: 0;
-    color: #ffffff;
-    padding: 0 20px 0 20px;
-}
-
-.dark {
-    padding: 15px;
-    background: #473f38;
-    color: #ffffff;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.dark a {
-    color: white;
-}
-
-.dark a:hover {
-    color: #4f271c;
-}
-
-/* Header*/
+/* Header Styles */
 header {
     background: #a79482;
     color: #ffffff;
@@ -87,19 +48,16 @@ header .current a {
     font-weight: bold;
 }
 
-header a:hover {
-    color: aquamarine;
-
-}
-
-/* Showcase */
-
+/* Showcase Styles */
 #showcase {
     min-height: 400px;
-    background: url('../img/background.jpg') no-repeat 0 -150px;
-    background-size: 100%;
+    background: url('../img/background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
     text-align: center;
     color: white;
+
+    position: relative;
 }
 
 #showcase h1 {
@@ -111,23 +69,55 @@ header a:hover {
 #showcase p {
     font-size: 30px;
     color: rgb(255, 255, 255);
-    /* Yazı rengi */
-
     background-clip: text;
-    /* Metin içine arka planı sığdırma */
     -webkit-background-clip: text;
-    /* Webkit (Chrome, Safari) için gerekli önek */
     display: inline;
-    /* Metni düzgün bir şekilde göstermek için gerekli */
     font-weight: lighter;
-    /* Yazı kalınlığı (isteğe bağlı) */
-
     -webkit-text-stroke-width: 0.5px;
-
 }
 
-/* Newsletter */
 
+
+
+
+
+#quote-container {
+    position: absolute;
+    margin-top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#quote-text {
+
+    max-width: 80%;
+    margin: auto;
+}
+
+@media(max-width: 768px) {
+    #quote-container {
+        width: 90%;
+    }
+
+    #quote-text {
+
+        max-width: 80%;
+        margin: auto;
+    }
+
+
+
+
+
+
+    #showcase p {
+        font-size: 15px;
+    }
+}
+
+
+/* Newsletter Styles */
 #newsletter {
     padding: 0px;
     color: #ffffff;
@@ -150,7 +140,7 @@ header a:hover {
     width: 250px;
 }
 
-/* Boxes */
+/* Boxes Styles */
 #boxes {
     margin-top: 20px;
 }
@@ -160,46 +150,28 @@ header a:hover {
     width: 30%;
     padding: 10px;
     text-align: center;
+    transition: transform 0.3s ease-in-out;
 }
 
 #boxes .box img {
     width: 80px;
+    transition: transform 0.3s ease-in-out;
 }
 
 #boxes .box img[src="./img/logo_3.png"] {
     width: 110px;
 }
 
-/* Sidebar*/
-aside#sidebar {
-    float: right;
-    width: 30%;
-    margin-top: 10px;
+#boxes .box:hover {
+    transform: scale(1.1);
 }
 
-aside#sidebar .quote input,
-aside#sidebar .quote textarea {
-    width: 90%;
-    padding: 5px;
+#boxes .box img:hover {
+    transform: scale(1.1);
+    animation: rotate 0.5s ease-in-out infinite;
 }
 
-/* Main-Col */
-article#main-col {
-    float: left;
-    width: 65%;
-    margin-top: 40px;
-}
-
-/* Services */
-ul#services li {
-    list-style: none;
-    padding: 20px;
-    border: #cccccc solid 1px;
-    margin-bottom: 5px;
-    background: #e6e6e6;
-}
-
-/* Footer */
+/* Footer Styles */
 footer {
     padding: 20px;
     margin-top: 20px;
@@ -208,7 +180,38 @@ footer {
     text-align: center;
 }
 
-/* Media Queries*/
+/* Sidebar Styles */
+aside#sidebar {
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    text-align: justify;
+}
+
+aside#sidebar .quote input,
+aside#sidebar .quote textarea {
+    width: 90%;
+    padding: 5px;
+
+}
+
+/* Main-Col Styles */
+article#main-col {
+    float: left;
+    width: 65%;
+    margin-top: 40px;
+}
+
+/* Services Styles */
+ul#services li {
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* Media Queries */
 @media(max-width: 768px) {
 
     header #branding,
@@ -246,6 +249,7 @@ footer {
     }
 }
 
+/* Miscellaneous Styles */
 span1 {
     font-size: 15px;
     letter-spacing: 1px;
@@ -253,7 +257,6 @@ span1 {
 
 #quote-text {
     font-size: 24px;
-    /* Dilediğiniz font boyutunu burada belirleyebilirsiniz */
 }
 
 @keyframes rotate {
@@ -282,23 +285,97 @@ span1 {
     animation: rotate 0.5s ease-in-out infinite;
 }
 
-/* İlgili bölümün büyüyüp küçülen animasyonunu sağlamak için bir animasyon ekleyin */
-#boxes .box {
-    transition: transform 0.3s ease-in-out;
+header a:hover {
+    color: aquamarine;
 }
 
-#boxes .box:hover {
-    transform: scale(1.1);
+h1 {
+    display: flex;
+    align-items: center;
 }
 
-#boxes .box img {
-    width: 80px;
-    transition: transform 0.3s ease-in-out;
+h1 img {
+    width: 50px;
+    margin-right: 10px;
 }
 
-#boxes .box img:hover {
-    transform: scale(1.1);
-    /* İstediğiniz büyüklük oranını kullanabilirsiniz */
-    animation: rotate 0.5s ease-in-out infinite;
-    /* Animasyonu sınırsız tekrar etmek için */
+h1 a img {
+    width: 24px;
+    margin-left: 5px;
+}
+
+h1 span:last-child {
+    font-size: 14px;
+    margin-top: 14px;
+    margin-left: 5px;
+}
+
+.highlight {
+    margin-right: 10px;
+}
+
+#quote-container {
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+}
+
+p {
+    align-items: center;
+}
+
+p img {
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+
+
+h5 img {
+    width: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    margin-bottom: 5px;
+}
+
+/* Global Styles */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.container a:hover {
+    color: #4f271c;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.button_1 {
+    background: #4f271c;
+    height: 38px;
+    border: 0;
+    color: #ffffff;
+    padding: 0 20px 0 20px;
+}
+
+.dark {
+    padding: 15px;
+    background: #473f38;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.dark a {
+    color: white;
+}
+
+.dark a:hover {
+    color: #4f271c;
 }

@@ -1,0 +1,13 @@
+
+
+@font-face {
+    font-family: 'Comfortaa';
+    src: url('../fonts/Comfortaa-Medium.ttf') format('woff');
+    /* Gerekirse ek varyasyonları ekleyin */
+}
+
+body {
+    font-family: 'Comfortaa', Arial, Helvetica, sans-serif;
+    /* Diğer body stilleri */
+}
+

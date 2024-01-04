@@ -5,133 +5,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--edit-->
     <meta name="description" content="Ali Alparslan's Webpage">
     <meta name="keywords" content="Ali Alparslan, Ukulele, GameDev, Web Design">
     <meta name="author" content="Ali Alparslan">
 
     <title>Ali's Page | Curriculum Vitae</title>
+
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/font.css">
+
+
 </head>
 
 <body>
     <header>
-        <style>
-            h1 {
-                display: flex;
-                align-items: center;
-            }
-
-            h1 img {
-                margin-right: 10px;
-                /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
-            }
-
-            .highlight {
-                margin-right: 10px;
-                /* "ali" ile "alparslan" arasında boşluk bırakmak için isteğe bağlı */
-            }
-
-            h1 span:last-child {
-                font-size: 14px;
-                margin-top: 14px;
-                margin-left: 5px;
-                /* game developer yazısının boyutunu isteğinize göre ayarlayabilirsiniz */
-            }
-        </style>
         <div class="container">
             <div id="branding">
-                <h1><img src="./icons/joystick-icon.png" alt="Map" style="width: 50px;  margin-right: 10px;"><span
-                        class="highlight">ali</span> alparslan | <span>game developer</span></h1>
+                <h1><img src="./icons/joystick-icon.png" alt="Map"><span class="highlight">ali</span> alparslan |
+                    <span>game developer</span>
+                </h1>
             </div>
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li class="current"><a href="CV.html">Curriculum Vitae</a></li>
-
-
                 </ul>
             </nav>
         </div>
     </header>
-
     <section id="newsletter">
         <div class="container">
             <h1>Curriculum Vitae
                 <a href="./CV/Ali_Alparslan_CV.pdf" download>
-                    <img src="./icons/download-icon.png" alt="Download" style="width: 24px; margin-left: 5px;">
+                    <img src="./icons/download-icon.png" alt="Download">
                 </a>
             </h1>
-
-
         </div>
     </section>
     <section id="main">
         <div class="container">
             <article id="main-col">
-
-
-                <!--  <img id="about_me_pic" src="img/4.jpeg" alt="">   -->
-
-                <!--   <h3>Who am I?</h3>
-
-                <p class="about_smt">I graduated from METU Civil Engineering Department. Upon
-                    graduation, I started studying game development. Now I am
-                    ready to take a step forward and continue my journey in an
-                    environment which would challenge me every day!
-                </p>   -->
                 <hr>
                 <h3>Education</h3>
                 <h5>Middle East Technical University </h5>
-
                 <p class="about_smt">BSc. Civil Engineering
-                    /Jun 2021
+                    / <small>Jun 2021</small>
                 </p>
-
-
-
 
                 <hr>
                 <h3>SKILLS</h3>
-                <h5>C#</h5>
-                <h5>Unity</h5>
-                <h5>GitHub</h5>
+                <h5><img src="./icons/csharp-icon.png" alt="C# image">C#</h5>
+                <h5><img src="./icons/unity-icon.png" alt="C# image">Unity</h5>
+                <h5><img src="./icons/github-icon2.png" alt="C# image">GitHub</h5>
+
+                <h5><img src="./icons/html-icon.png" alt="C# image">HTML</h5>
+                <h5><img src="./icons/css-icon.png" alt="C# image">CSS</h5>
+                <h5><img src="./icons/js-icon.png" alt="C# image">JS</h5>
                 <hr>
                 <h3>LANGUAGES</h3>
                 <h5>English, full professional proficiency</h5>
                 <h5>Turkish, native</h5>
-
                 <hr>
                 <h3>COURSES</h3>
                 <h5>Udemy</h5>
-
-                <p class="about_smt">Unity 3D Temel C# ve Doğru Kodlama Eğitimi – Berk Terek /Aug 2023 </p>
-
+                <p class="about_smt">Unity 3D Temel C# ve Doğru Kodlama Eğitimi – Berk Terek /<small> Aug 2023 </small>
+                </p>
                 <h5>Unity Learn</h5>
-
-                <p class="about_smt">Junior Programmer Pathway
-                    /Apr 2023</p>
-
-
+                <p class="about_smt">Junior Programmer Pathway / <small>Apr 2023</small></p>
                 <h5>W3schools</h5>
-
-                <p class="about_smt">C# /Jan 2023</p>
-
+                <p class="about_smt">C# / <small>Jan 2023</small></p>
                 <h5>Harvard University</h5>
-
-                <p class="about_smt">CS50's Introduction to Game Development
-                    /Sep 2022</p>
-                <p class="about_smt">CS50's Introduction to Computer Science
-                    /Mar 2022</p>
-
-                <h5>Harvard University</h5>
-
-                <p class="about_smt">Programming for Everybody (Getting Started with Python)
-                    /Oct 2020</p>
-
-
+                <p class="about_smt">CS50's Introduction to Game Development / <small> Sep 2022</small></p>
+                <p class="about_smt">CS50's Introduction to Computer Science / <small> Mar 2022</small></p>
+                <h5>University of Michigan </h5>
+                <p class="about_smt">Programming for Everybody (Getting Started with Python) / <small>Oct 2020</small>
+                </p>
             </article>
-
             <aside id="sidebar">
                 <div class="dark">
                     <h3>Hello!</h3>
@@ -147,46 +97,29 @@
 
                 </div>
             </aside>
-
             <aside id="sidebar">
                 <div class="dark">
                     <h3>Contact</h3>
-                    <style>
-                        p {
-                            display: flex;
-                            align-items: center;
-                        }
-
-                        p img {
-                            margin-right: 10px;
-                            /* İkon ile metin arasında bir boşluk bırakmak için isteğe bağlı */
-                        }
-                    </style>
-
                     <!-- Map -->
-                    <p><img src="./icons/map-icon.png" alt="Map" style="width: 32px;">Ankara, TURKEY</p>
+                    <p><img src="./icons/map-icon.png" alt="Map">Ankara, TURKEY</p>
 
                     <!-- E-posta -->
-                    <p><img src="./icons/email-icon.png" alt="E-posta" style="width: 32px;"> <a
-                            href="mailto:ali.alparslan.94@outlook.com">E-mail</a></p>
+                    <p><img src="./icons/email-icon.png" alt="E-posta"> <em><a
+                                href="mailto:ali.alparslan.94@outlook.com">E-mail</a></em></p>
 
                     <!-- GitHub -->
-                    <p><img src="./icons/github-icon.png" alt="GitHub" style="width: 32px;"> <em><a
+                    <p><img src="./icons/github-icon.png" alt="GitHub"> <em><a
                                 href="https://github.com/donchokella?tab=repositories">GitHub</a></em></p>
 
                     <!-- LinkedIn -->
-                    <p><img src="./icons/linkedin-icon.png" alt="LinkedIn" style="width: 32px;"> <em><a
+                    <p><img src="./icons/linkedin-icon.png" alt="LinkedIn"> <em><a
                                 href="https://www.linkedin.com/in/alialparslan/">LinkedIn</a></em></p>
 
                     <!-- itch.io -->
-                    <p><img src="./icons/itchio-icon.png" alt="itch.io" style="width: 32px;"> <em><a
+                    <p><img src="./icons/itchio-icon.png" alt="itch.io"> <em><a
                                 href="https:donchokella.itch.io">itch.io</a></em></p>
-
-
-
                 </div>
             </aside>
-
         </div>
     </section>
 
