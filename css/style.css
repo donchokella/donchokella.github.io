@@ -216,9 +216,14 @@ ul#services li {
 /* Media Queries */
 @media(max-width: 768px) {
 
-
     header nav,
-    header nav li,
+    header nav li {
+        float: left;
+        text-align: center;
+        width: 100%;
+    }
+
+
     #newsletter h1,
     #newsletter form,
     article#main-col,
