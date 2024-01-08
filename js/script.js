@@ -1,5 +1,7 @@
+
 document.addEventListener("DOMContentLoaded", function () {
     showRandomQuote();
+    setInterval(showRandomQuote, 10000); // 10 saniyede bir fonksiyonu çağır
 });
 
 function showRandomQuote() {
@@ -38,5 +40,16 @@ function showRandomQuote() {
     var randomIndex = Math.floor(Math.random() * quotes.length);
     var quoteText = quotes[randomIndex];
 
-    document.getElementById("quote-text").innerText = quoteText;
+    var quoteContainer = document.getElementById("quote-text");
+    quoteContainer.innerText = quoteText;
+
+    // Alıntıları sağdan sola akmak için animasyon eklenir
+    quoteContainer.style.animation = "slideIn 10s linear";
+
+    // 10 saniye sonra animasyonu sıfırla
+    setTimeout(function () {
+        quoteContainer.style.animation = "";
+    }, 10000);
 }
+
+
