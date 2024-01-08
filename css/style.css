@@ -318,7 +318,13 @@ ul#services li {
         padding: 3%;
     }
 
-
+    #newsletter .job-container p {
+        color: #ffffff;
+        padding: 15px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
 
 }
 
